@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="pt-BR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Imagem da Capa -->
+      <div class="capa-container">
+        <span id="status">Pausado</span>
+        <img src="https://picsum.photos/300/300" alt="Capa do Álbum" />
+      </div>
+
+      <!-- Informações da Música -->
+      <h2 id="titulo">Musica Foda</h2>
+      <p id="artista">SESI Playlist</p>
+
+      <!-- Elemento de Áudio (Escondido) -->
+      <audio
+        id="meuAudio"
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      ></audio>
+
+      <!-- Barra e Tempos -->
+      <div class="tempo-container">
+        <span id="tempoAtual">0:00</span>
+        <input type="range" id="barraProgresso" value="0" min="0" step="1" />
+        <span id="tempoTotal">0:00</span>
+      </div>
+
+      <!-- Controles -->
+      <div class="controles">
+        <button id="btnAnterior">⏮</button>
+        <button id="btnPlayPause" class="play-btn">▶</button>
+        <button id="btnProximo">⏭</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
